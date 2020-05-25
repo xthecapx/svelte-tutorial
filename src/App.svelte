@@ -3,6 +3,10 @@
   import Click from "./Click.svelte";
   import Reactivity from "./Reactivity.svelte";
   import Info from "./Info.svelte";
+  import Conditional from "./Conditional.svelte";
+  import Loops from "./Loops.svelte";
+  import Keyed from "./Keyed.svelte";
+  import Await from "./Await.svelte";
   export let name;
   const pkg = {
     name: "svelte",
@@ -42,6 +46,10 @@
 </style>
 
 <main>
+  <Await />
+  <Keyed />
+  <Loops />
+  <Conditional />
   <Info {...pkg} />
   <Reactivity />
   <h1>Hello {name.toUpperCase()}!</h1>
